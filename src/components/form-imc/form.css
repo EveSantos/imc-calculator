@@ -1,0 +1,40 @@
+div {
+    color: white
+}
+
+.form-imc {
+    max-width: 400px;
+    border-radius: 10px;
+    background-color: #03434A;
+    padding: 30px;
+    margin: 30px;
+    justify-content: center;
+}
+
+.line {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h2,
+label {
+    color: white;
+}
+
+input {
+    max-width: 80px;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 20%;
+}
