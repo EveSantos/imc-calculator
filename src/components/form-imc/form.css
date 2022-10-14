@@ -2,13 +2,17 @@ div {
     color: white
 }
 
+form{
+    align-items: center;
+    width: 30%;
+}
+
 .form-imc {
     max-width: 400px;
     border-radius: 10px;
-    background-color: #03434A;
+    background-color: #1a9084;
     padding: 30px;
     margin: 30px;
-    justify-content: center;
 }
 
 .line {
@@ -24,7 +28,10 @@ label {
 }
 
 input {
-    max-width: 80px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 4%;
 }
 
 .label-input {
@@ -32,9 +39,32 @@ input {
     flex-direction: column;
 }
 
-.button{
+.button-form{
+    border-radius: 5px;
+    background-color: #36932c;
+    color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 40px;
+    text-decoration: none;
     display: flex;
-    justify-content: center;
     margin: 0 auto;
-    width: 20%;
+    padding: 3% 8%;
+
+}
+
+.button-form:hover{
+    background-color: #1c6e13;
+    transition: 0.5s;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
 }

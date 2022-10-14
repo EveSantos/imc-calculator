@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './form.css';
 
 export function FormImc() {
-
+    
     const [high, setHigh] = useState('');
     const [gender, setGender] = useState('');
     const [age, setAge] = useState('');
@@ -10,28 +10,22 @@ export function FormImc() {
 
     const handleHighChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setHigh(e.target.value);
-        console.log(e.target.value);
     };
 
     const handleGenderChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setGender(e.target.value);
-        console.log(e.target.value);
     };
 
     const handleAgeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setAge(e.target.value);
-        console.log(e.target.value);
     };
 
     const handleweightChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setWeigth(e.target.value);
-        console.log(e.target.value);
     };
 
     const handleSubmit = (event : React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        console.log(high, gender, age, weight);
-        console.log(typeof high)
         const highNumber = Number(high);
         const weightNumber = Number(weight);
         const imc = weightNumber / (highNumber * highNumber);
@@ -67,28 +61,22 @@ export function FormImc() {
                             <input type="text" value={high} onChange={handleHighChange}/>
                         </div>
                         <div className="label-input">
-                            <label htmlFor="">Gênero</label>
-                            <input type="text" value={gender} onChange={handleGenderChange}/>
-                            {/* <div>
-                                <input type="checkbox" name="f" value="f" />
-                                <label htmlFor="f">F</label>
-                                <input type="checkbox" name="m" value="m"/>
-                                <label htmlFor="">M</label>
-                            </div> */}
+                            <label htmlFor="">Peso</label>
+                            <input type="number" value={weight} onChange={handleweightChange} />
                         </div>
                     </div>
-                    <div className="line">
+                    {/* <div className="line">
                         <div className="label-input">
                             <label htmlFor="">Idade</label>
-                            <input type="text" value={age} onChange={handleAgeChange}/>
+                            <input type="number" value={age} onChange={handleAgeChange}/>
                         </div>
                         <div className="label-input">
                             <label htmlFor="">Peso</label>
-                            <input type="text" value={weight} onChange={handleweightChange} />
+                            <input type="number" value={weight} onChange={handleweightChange} />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
-                <input className='button' type="submit" value="Calcular" />
+                <input className='button-form' type="submit" value="Calcular" />
             </div>
         </form>
     );
