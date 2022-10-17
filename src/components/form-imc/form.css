@@ -8,7 +8,7 @@ form{
 }
 
 .form-imc {
-    max-width: 400px;
+    /* max-width: 400px; */
     border-radius: 10px;
     background-color: #1a9084;
     padding: 30px;
@@ -22,6 +22,11 @@ form{
     justify-content: space-between;
 }
 
+h2{
+    display: flex;
+    justify-content: center;
+}
+
 h2,
 label {
     color: white;
@@ -32,12 +37,15 @@ input {
     border: none;
     border-radius: 5px;
     padding: 4%;
+    color: gray;
 }
 
 .label-input {
     display: flex;
     flex-direction: column;
 }
+
+
 
 .button-form{
     border-radius: 5px;
@@ -51,12 +59,20 @@ input {
     display: flex;
     margin: 0 auto;
     padding: 3% 8%;
-
+    
 }
 
 .button-form:hover{
     background-color: #1c6e13;
     transition: 0.5s;
+}
+
+input::placeholder{
+    color: rgba(0, 0, 0, 0.302);
+}
+
+input:focus{
+    outline: none;
 }
 
 input[type=number]::-webkit-inner-spin-button { 

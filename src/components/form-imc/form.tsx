@@ -58,11 +58,11 @@ export function FormImc() {
                     <div className="line">
                         <div className="label-input">
                             <label htmlFor="">Altura</label>
-                            <input type="text" value={high} onChange={handleHighChange}/>
+                            <input type="text" placeholder='Informe a Altura' value={high} onChange={handleHighChange}/>
                         </div>
                         <div className="label-input">
                             <label htmlFor="">Peso</label>
-                            <input type="number" value={weight} onChange={handleweightChange} />
+                            <input type="number" placeholder='Informe o Peso' value={weight} onChange={handleweightChange} />
                         </div>
                     </div>
                     {/* <div className="line">
