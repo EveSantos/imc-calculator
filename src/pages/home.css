@@ -1,17 +1,61 @@
+.App{
+  margin-top: 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo{
+    border-radius: 15px;
+    width: 30%;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.174);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 80%;
+    height: 70%;
+    border-radius: 500px;
+}
+
+.button-result{
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #0a9f90;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.div-result{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    font-size: 20px;
+}
+
 div {
     color: white
 }
 
 form{
     align-items: center;
-    width: 30%;
 }
 
 .form-imc {
-    /* max-width: 400px; */
     border-radius: 10px;
     background-color: #1a9084;
-    padding: 30px;
+    padding: 15px;
     margin: 30px;
 }
 
@@ -39,13 +83,6 @@ input {
     padding: 4%;
     color: gray;
 }
-
-.label-input {
-    display: flex;
-    flex-direction: column;
-}
-
-
 
 .button-form{
     border-radius: 5px;
